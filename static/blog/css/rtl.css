@@ -1,0 +1,119 @@
+@font-face {
+  font-family: Sahel;
+  src: url('Sahel.eot');
+  src: url('Sahel.eot?#iefix') format('embedded-opentype'),
+       url('Sahel.woff2') format('woff2'),
+       url('Sahel.woff') format('woff'),
+       url('Sahel.ttf') format('truetype');
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Sahel';
+    font-size: 14px;
+}
+
+p ,h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,a{
+    font-family: 'Sahel';
+}
+
+.navbar-nav {
+    margin-left: initial !important;
+    margin-right: auto;
+}
+
+.post-meta {
+    text-align: left;
+}
+
+.site-heading h1 {
+    font-size: 2rem !important;
+}
+
+h2.post-title {
+    font-size: 28px !important;
+}
+
+h3.post-subtitle {
+    font-size: 20px !important;
+}
+
+a.btn.btn-primary.text-uppercase.ml-3 {
+    margin-left: 12px !important;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link {
+    font-size: 12px;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+}
+
+.nav ul {
+    padding-right: 0;
+}
+
+.nav ul li {
+    border-bottom: none;
+    height: 86px;
+    line-height: 86px;
+    font-size: 14px !important;
+    display: inline-block;
+    float: left;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    transition: .3s background-color;
+    padding: 0 24px;
+}
+
+.nav ul li a:hover {
+    background-color: #5c89c7;
+    color: #ffffff;
+}
+
+.nav a {
+    border-bottom: none;
+}
+
+.nav li ul{
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+.nav li:hover ul{
+    display: block;
+}
+
+.nav ul li ul li {
+    display: block;
+    float: none !important;
+    height: auto;
+    line-height: 34px;
+}
+
+.nav ul li ul li ul {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    display: none !important;
+}
+
+.nav ul > li > ul > li:hover > ul {
+    display: block !important;
+}
+
+.nav ul > li > ul > li > ul > li:hover > ul {
+    display: block !important;
+}
+
+#mainNav .navbar-brand {
+    font-weight: 800;
+    font-size: 28px;
+}
