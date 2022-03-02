@@ -1,14 +1,21 @@
 from django.views.generic import ListView, DetailView
-from django.contrib.auth.models import User
+from account.models import User
 from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404
 #from django.http import HttpResponse
 from .models import Article, Category
+from account.mixins import AuthorAccessMixin
 
 
 class ArticleList(ListView):
     queryset = Article.objects.published()
     paginate_by = 3
+
+
+class ArticlePreview(AuthorAccessMixin, DetailView):
+    def get_object(self):
+        pk = self.kwargs.get('pk')
+        return get_object_or_404(Article, pk=pk)
 
 
 class ArticleDetail(DetailView):
